@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { getInput } = require('@actions/core');
-const generateReport = require('lib/generate-report');
+const generateReport = require('./lib/generate-report');
 
 const baseFilePath = getInput('base-report-path', { required: true });
 const diffFilePath = getInput('comparison-report-path', { required: true });
