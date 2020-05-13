@@ -11,6 +11,12 @@ inputs:
   comparison-report-path:
     description: Path to the audit report to compare against the base
     required: true
+  base-identifier:
+    description: A title to identify what’s being compared against, perhaps a branch name
+    default: Base
+  comparison-idenitifier:
+    description: A title to identify what’s being compared, perhaps a SHA
+    default: Comparison
   output-path:
     description: Path to write the comparison to
     required: true
