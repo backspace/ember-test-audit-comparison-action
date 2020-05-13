@@ -2,7 +2,7 @@ import { expect } from 'chai';
 const generateReport = require('../lib/generate-report');
 
 describe('Generate report', function () {
-  it('should calculate changes', function () {
+  it('should calculate changes with explicit directional indicators', function () {
     const generated = generateReport({
       baseReport: {
         passes: 4,
@@ -24,9 +24,9 @@ describe('Generate report', function () {
 |               | ${'base'}      | ${'diff'}      | change                                       |
 |---------------|------------------------|------------------------|----------------------------------------------|
 | passes        | ${4}   | ${2}   | ${-2}     |
-| failures      | ${0} | ${1} | ${1} |
-| flaky         | ${0}    | ${1}    | ${1}       |
-| duration (ms) | ${1000} | ${2000} | ${1000} |
+| failures      | ${0} | ${1} | ${'+1'} |
+| flaky         | ${0}    | ${1}    | ${'+1'}       |
+| duration (ms) | ${1000} | ${2000} | ${'+1000'} |
 `;
     
     expect(generated).to.equal(expected);
