@@ -1,5 +1,5 @@
 const fs = require('fs');
-import { getInput } from '@actions/core';
+const { getInput } = require('@actions/core');
 
 const baseFilePath = getInput('base-report-path', { required: true });
 const diffFilePath = getInput('comparison-report-path', { required: true });
