@@ -21,6 +21,7 @@ describe('Generate report', function () {
     });
 
     const expected = `
+## Ember Test Audit comparison
 |          | ${'base'}      | ${'diff'}      | change                                       |
 |----------|------------------------|------------------------|----------------------------------------------|
 | passes   | ${4}   | ${2}   | ${-2}     |
