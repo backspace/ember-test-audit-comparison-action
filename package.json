@@ -1,0 +1,9 @@
+{
+  "name": "ember-test-audit-comparison-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action to compare runs of Ember Test Audit",
+  "main": "index.js",
+  "repository": "https://github.com/backspace/ember-test-audit-comparison-action",
+  "author": "Buck Doyle",
+  "license": "MIT"
+}
