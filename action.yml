@@ -1,0 +1,19 @@
+name: Ember Test Audit comparison
+description: Compare runs of Ember Test Audit
+author: Buck Doyle
+branding:
+  icon: clock
+  color: green
+inputs:
+  base-report-path:
+    description: Path to the audit report for the comparison base
+    required: true
+  comparison-report-path:
+    description: Path to the audit report to compare against the base
+    required: true
+  output-path:
+    description: Path to write the comparison to
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
