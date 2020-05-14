@@ -63,7 +63,7 @@ jobs:
           path: audit-diff.md
 ```
 
-## Options
+## Configuration
 
 These are all required:
 
