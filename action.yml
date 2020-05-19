@@ -14,7 +14,7 @@ inputs:
   base-identifier:
     description: A title to identify what’s being compared against, perhaps a branch name
     default: Base
-  comparison-idenitifier:
+  comparison-identifier:
     description: A title to identify what’s being compared, perhaps a SHA
     default: Comparison
   output-path:
