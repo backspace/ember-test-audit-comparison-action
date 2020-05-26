@@ -8,13 +8,13 @@ describe('Generate report', function () {
         passes: 4,
         failures: 0,
         flaky: 0,
-        duration: 1200,
+        duration: 2500,
       },
       diffReport: {
         passes: 2,
         failures: 1,
         flaky: 1,
-        duration: 2500,
+        duration: 1200,
       },
       baseIdentifier: 'base',
       diffIdentifier: 'diff',
@@ -27,7 +27,7 @@ describe('Generate report', function () {
 | passes   | ${4}   | ${2}   | ${-2}     |
 | failures | ${0} | ${1} | ${'+1'} |
 | flaky    | ${0}    | ${1}    | ${'+1'}       |
-| duration | ${'01s 200ms'} | ${'02s 500ms'} | ${'+01s 300ms'} |
+| duration | ${'02s 500ms'} | ${'01s 200ms'} | ${'-01s 300ms'} |
 `;
     
     expect(generated).to.equal(expected);
