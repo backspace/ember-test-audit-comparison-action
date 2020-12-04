@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-const generateReport = require('../lib/generate-report');
+const generateReport = require('../lib/generate-timing-report');
 
 describe('Generate report', function () {
   it('should calculate changes with explicit directional indicators and humanised durations', function () {

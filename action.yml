@@ -17,8 +17,11 @@ inputs:
   comparison-identifier:
     description: A title to identify what’s being compared, perhaps a SHA
     default: Comparison
-  output-path:
-    description: Path to write the comparison to
+  timing-output-path:
+    description: Path to write the timing comparison to
+    required: true
+  flakiness-output-path:
+    description: Path to write the flakiness report
     required: true
 runs:
   using: 'node12'
