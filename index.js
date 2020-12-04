@@ -7,7 +7,9 @@ const baseFilePath = getInput('base-report-path', { required: true });
 const diffFilePath = getInput('comparison-report-path', { required: true });
 
 const timingOutputPath = getInput('timing-output-path', { required: true });
-const flakinessOutputPath = getInput('flakiness-output-path', { require: true });
+const flakinessOutputPath = getInput('flakiness-output-path', {
+  require: true,
+});
 
 const baseIdentifier = getInput('base-identifier', { required: false });
 const diffIdentifier = getInput('comparison-identifier', { required: false });

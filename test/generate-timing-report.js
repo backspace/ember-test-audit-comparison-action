@@ -29,7 +29,7 @@ describe('Generate report', function () {
 | flaky    | ${0}    | ${1}    | ${'+1'}       |
 | duration | ${'02s 500ms'} | ${'01s 200ms'} | ${'-01s 300ms'} |
 `;
-    
+
     expect(generated).to.equal(expected);
   });
 });
