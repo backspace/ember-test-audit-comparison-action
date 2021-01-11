@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-const generateReport = require('../lib/generate-report');
+const generateReport = require('../lib/generate-timing-report');
 
 describe('Generate report', function () {
   it('should calculate changes with explicit directional indicators and humanised durations', function () {
@@ -29,7 +29,7 @@ describe('Generate report', function () {
 | flaky    | ${0}    | ${1}    | ${'+1'}       |
 | duration | ${'02s 500ms'} | ${'01s 200ms'} | ${'-01s 300ms'} |
 `;
-    
+
     expect(generated).to.equal(expected);
   });
 });
